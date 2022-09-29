@@ -1,0 +1,7 @@
+{
+  "profile": {
+    "username": "string",
+    "image": "string",
+    "following": true
+  }
+}
