@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="en">
+  
+<head>
+<META http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    
+<meta charset="utf-8">
+    
+<meta content="width=device-width, initial-scale=1, shrink-to-fit=no" name="viewport">
+    
+<link href="res/bootstrap.min.css" rel="stylesheet" type="text/css">
+    
+<link href="res/karate-report.css" rel="stylesheet" type="text/css">
+    
+<link href="favicon.ico" rel="shortcut icon">
+    
+<script src="res/jquery.min.js" type="text/javascript"></script>
+    <script src="res/jquery.tablesorter.min.js" type="text/javascript"></script>
+    <script src="res/bootstrap.min.js" type="text/javascript"></script>
+    <script src="res/karate-report.js" type="text/javascript"></script>
+    
+<title>karate.Article.Delete.DeleteArticle</title>
+  
+</head>
+  
+<body>
+    
+<div id="root-container">
+      
+<div id="leftnav">
+        
+<div class="nav-logo">
+          
+<a href="karate-summary.html">
+            <img alt="Karate" src="res/karate-logo.svg">
+          </a>
+          
+<div class="nav-count">
+            
+<div class="bg-success" id="nav-pass">0</div>
+            
+<div class="bg-danger" id="nav-fail">1</div>
+          
+</div>
+        
+</div>
+        
+<div id="nav-type">Scenarios</div>         
+        
+<div id="nav-date">2022-09-29 08:19:47 PM</div>        
+      
+<div class="nav-container">
+<div class="nav-item failed">
+<a href="#[1:8]">[1:8] delete an article </a>
+</div>
+</div>
+</div>
+      
+<div id="content">
+      
+<div class="page-heading alert alert-primary">
+<a href="karate-summary.html">Summary</a><span class="feature-label">|</span><a href="karate-tags.html">Tags</a><span class="feature-label">|</span><span class="feature-label">Feature:</span><span class="feature-name">karate/Article/Delete/DeleteArticle.feature</span><span class="feature-description">Delete an article | As QA Automation&#13;
+  I want to delete an article</span>
+</div>
+<div class="scenario">
+<div class="scenario-heading" id="[1:8]">
+<div class="heading-container">
+<div class="scenario-tags"></div>
+<span class="scenario-keyword">Scenario: [1:8]</span><span class="scenario-name">delete an article </span>
+</div>
+<div class="scenario-time failed">ms: 349</div>
+</div>
+<div class="step-row">
+<div class="step-container" id="[1:8]bg">
+<div class="step-ref bg-step">&gt;&gt;</div>
+<div class="step-cell passed">Background:</div>
+</div>
+<div class="time-cell passed"></div>
+</div>
+<div class="step-row" data-parent="[1:8]bg">
+<div class="step-container" id="1">
+<div class="step-ref bg-step">1</div>
+<div class="step-cell passed">* url url</div>
+</div>
+<div class="time-cell passed">0</div>
+</div>
+<div class="step-row">
+<div class="step-container" id="2">
+<div class="step-ref passed">2</div>
+<div class="step-cell passed">Given header Authorization = 'Bearer '+ token</div>
+</div>
+<div class="time-cell passed">1</div>
+</div>
+<div class="step-row">
+<div class="step-container" id="3">
+<div class="step-ref passed">3</div>
+<div class="step-cell passed">Given path 'articles'</div>
+</div>
+<div class="time-cell passed">0</div>
+</div>
+<div class="step-row">
+<div class="step-container" id="4">
+<div class="step-ref passed">4</div>
+<div class="step-cell passed">And path slug</div>
+</div>
+<div class="time-cell passed">0</div>
+</div>
+<div class="step-row">
+<div class="step-container" id="5">
+<div class="step-ref passed">5</div>
+<div class="step-cell passed">When method DELETE</div>
+</div>
+<div class="time-cell passed">348</div>
+</div>
+<div class="preformatted" data-parent="5">20:19:45.383 request:
+1 &gt; DELETE https://angular-conduit-node.herokuapp.com/api/articles/vida1-kejm1e
+1 &gt; Accept-Encoding: gzip,deflate
+1 &gt; Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjYzMzNjNTMwNzk1Y2M4MDAxNzA5MTc2ZCIsInVzZXJuYW1lIjoicm9qbzEiLCJleHAiOjE2Njk1MjEzNzMsImlhdCI6MTY2NDMzNzM3M30.9gevisIxFsDa8PMnt-kk9BCzaBcuz1b62czkPD_JWz4
+1 &gt; Connection: Keep-Alive
+1 &gt; Host: angular-conduit-node.herokuapp.com
+1 &gt; User-Agent: Apache-HttpClient/4.5.12 (Java/1.8.0_202)
+
+20:19:45.729 response time in milliseconds: 345,69
+1 &lt; 204
+1 &lt; Access-Control-Allow-Origin: *
+1 &lt; Connection: keep-alive
+1 &lt; Content-Length: 0
+1 &lt; Date: Fri, 30 Sep 2022 01:19:43 GMT
+1 &lt; Etag: W/"a-oQDOV50e1MN2H/N8GYi+8w"
+1 &lt; Server: Cowboy
+1 &lt; Via: 1.1 vegur
+1 &lt; X-Powered-By: Express</div>
+<div class="step-row">
+<div class="step-container" id="6">
+<div class="step-ref failed">6</div>
+<div class="step-cell failed">Then status 200</div>
+</div>
+<div class="time-cell failed">0</div>
+</div>
+<div class="preformatted" data-parent="6">20:19:45.730 status code was: 204, expected: 200, response time: 346, url: https://angular-conduit-node.herokuapp.com/api/articles/vida1-kejm1e, response:
+DeleteArticle.feature:13 - status code was: 204, expected: 200, response time: 346, url: https://angular-conduit-node.herokuapp.com/api/articles/vida1-kejm1e, response: </div>
+</div>
+</div>
+    
+</div>   
+  
+</body>
+
+</html>

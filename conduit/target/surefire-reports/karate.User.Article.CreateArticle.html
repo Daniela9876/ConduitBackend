@@ -1,0 +1,183 @@
+<!DOCTYPE html>
+<html lang="en">
+  
+<head>
+<META http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    
+<meta charset="utf-8">
+    
+<meta content="width=device-width, initial-scale=1, shrink-to-fit=no" name="viewport">
+    
+<link href="res/bootstrap.min.css" rel="stylesheet" type="text/css">
+    
+<link href="res/karate-report.css" rel="stylesheet" type="text/css">
+    
+<link href="favicon.ico" rel="shortcut icon">
+    
+<script src="res/jquery.min.js" type="text/javascript"></script>
+    <script src="res/jquery.tablesorter.min.js" type="text/javascript"></script>
+    <script src="res/bootstrap.min.js" type="text/javascript"></script>
+    <script src="res/karate-report.js" type="text/javascript"></script>
+    
+<title>karate.User.Article.CreateArticle</title>
+  
+</head>
+  
+<body>
+    
+<div id="root-container">
+      
+<div id="leftnav">
+        
+<div class="nav-logo">
+          
+<a href="karate-summary.html">
+            <img alt="Karate" src="res/karate-logo.svg">
+          </a>
+          
+<div class="nav-count">
+            
+<div class="bg-success" id="nav-pass">1</div>
+            
+<div class="bg-danger" id="nav-fail">0</div>
+          
+</div>
+        
+</div>
+        
+<div id="nav-type">Scenarios</div>         
+        
+<div id="nav-date">2022-09-29 02:04:04 PM</div>        
+      
+<div class="nav-container">
+<div class="nav-item passed">
+<a href="#[1:9]">[1:9] check the service POST method </a>
+</div>
+</div>
+</div>
+      
+<div id="content">
+      
+<div class="page-heading alert alert-primary">
+<a href="karate-summary.html">Summary</a><span class="feature-label">|</span><a href="karate-tags.html">Tags</a><span class="feature-label">|</span><span class="feature-label">Feature:</span><span class="feature-name">karate/User/Article/CreateArticle.feature</span><span class="feature-description">Service client Post | As QA Automation&#13;
+  I want Article to create&#13;
+  To validate the status code and response</span>
+</div>
+<div class="scenario">
+<div class="scenario-heading" id="[1:9]">
+<div class="heading-container">
+<div class="scenario-tags"></div>
+<span class="scenario-keyword">Scenario: [1:9]</span><span class="scenario-name">check the service POST method </span>
+</div>
+<div class="scenario-time passed">ms: 1362</div>
+</div>
+<div class="step-row">
+<div class="step-container" id="[1:9]bg">
+<div class="step-ref bg-step">&gt;&gt;</div>
+<div class="step-cell passed">Background:</div>
+</div>
+<div class="time-cell passed"></div>
+</div>
+<div class="step-row" data-parent="[1:9]bg">
+<div class="step-container" id="1">
+<div class="step-ref bg-step">1</div>
+<div class="step-cell passed">* url url</div>
+</div>
+<div class="time-cell passed">0</div>
+</div>
+<div class="step-row">
+<div class="step-container" id="2">
+<div class="step-ref passed">2</div>
+<div class="step-cell passed">* def requestBody = read('karate/User/Article/BodyRequest.json')</div>
+</div>
+<div class="time-cell passed">7</div>
+</div>
+<div class="step-row">
+<div class="step-container" id="3">
+<div class="step-ref passed">3</div>
+<div class="step-cell passed">* def responseCrete = read('karate/User/Article/CreateResponse.json')</div>
+</div>
+<div class="time-cell passed">7</div>
+</div>
+<div class="step-row">
+<div class="step-container" id="4">
+<div class="step-ref passed">4</div>
+<div class="step-cell passed">* print token</div>
+</div>
+<div class="time-cell passed">1</div>
+</div>
+<div class="preformatted" data-parent="4">14:04:03.122 [print] eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjYzMzNjNTMwNzk1Y2M4MDAxNzA5MTc2ZCIsInVzZXJuYW1lIjoicm9qbzEiLCJleHAiOjE2Njk1MjEzNzMsImlhdCI6MTY2NDMzNzM3M30.9gevisIxFsDa8PMnt-kk9BCzaBcuz1b62czkPD_JWz4</div>
+<div class="step-row">
+<div class="step-container" id="5">
+<div class="step-ref passed">5</div>
+<div class="step-cell passed">Given header Authorization = 'Bearer '+ token</div>
+</div>
+<div class="time-cell passed">4</div>
+</div>
+<div class="step-row">
+<div class="step-container" id="6">
+<div class="step-ref passed">6</div>
+<div class="step-cell passed">Given path 'articles'</div>
+</div>
+<div class="time-cell passed">2</div>
+</div>
+<div class="step-row">
+<div class="step-container" id="7">
+<div class="step-ref passed">7</div>
+<div class="step-cell passed">And request requestBody</div>
+</div>
+<div class="time-cell passed">0</div>
+</div>
+<div class="step-row">
+<div class="step-container" id="8">
+<div class="step-ref passed">8</div>
+<div class="step-cell passed">When method POST</div>
+</div>
+<div class="time-cell passed">1340</div>
+</div>
+<div class="preformatted" data-parent="8">14:04:03.923 request:
+1 &gt; POST https://angular-conduit-node.herokuapp.com/api/articles
+1 &gt; Accept-Encoding: gzip,deflate
+1 &gt; Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjYzMzNjNTMwNzk1Y2M4MDAxNzA5MTc2ZCIsInVzZXJuYW1lIjoicm9qbzEiLCJleHAiOjE2Njk1MjEzNzMsImlhdCI6MTY2NDMzNzM3M30.9gevisIxFsDa8PMnt-kk9BCzaBcuz1b62czkPD_JWz4
+1 &gt; Connection: Keep-Alive
+1 &gt; Content-Length: 90
+1 &gt; Content-Type: application/json; charset=UTF-8
+1 &gt; Host: angular-conduit-node.herokuapp.com
+1 &gt; User-Agent: Apache-HttpClient/4.5.12 (Java/1.8.0_202)
+{"article":{"title":"vida1","description":"vida1","body":"hola1","tagList":["#poes&iacute;a1"]}}
+
+14:04:04.468 response time in milliseconds: 543,65
+1 &lt; 200
+1 &lt; Access-Control-Allow-Origin: *
+1 &lt; Connection: keep-alive
+1 &lt; Content-Length: 343
+1 &lt; Content-Type: application/json; charset=utf-8
+1 &lt; Date: Thu, 29 Sep 2022 19:04:02 GMT
+1 &lt; Etag: W/"157-DOK9Hh7sRKT52Sc9pG/xWQ"
+1 &lt; Server: Cowboy
+1 &lt; Vary: X-HTTP-Method-Override
+1 &lt; Via: 1.1 vegur
+1 &lt; X-Powered-By: Express
+{"article":{"slug":"vida1-jxpf6m","title":"vida1","description":"vida1","body":"hola1","createdAt":"2022-09-29T19:04:02.847Z","updatedAt":"2022-09-29T19:04:02.847Z","tagList":["#poes&iacute;a1"],"favorited":false,"favoritesCount":0,"author":{"username":"rojo1","image":"https://static.productionready.io/images/smiley-cyrus.jpg","following":false}}}</div>
+<div class="step-row">
+<div class="step-container" id="9">
+<div class="step-ref passed">9</div>
+<div class="step-cell passed">Then status 200</div>
+</div>
+<div class="time-cell passed">0</div>
+</div>
+<div class="step-row">
+<div class="step-container" id="10">
+<div class="step-ref passed">10</div>
+<div class="step-cell passed">And match response == responseCrete</div>
+</div>
+<div class="time-cell passed">2</div>
+</div>
+</div>
+</div>
+    
+</div>   
+  
+</body>
+
+</html>

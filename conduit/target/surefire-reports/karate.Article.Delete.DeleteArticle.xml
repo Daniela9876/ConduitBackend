@@ -1,0 +1,14 @@
+<testsuite failures="1" name="karate/Article/Delete/DeleteArticle.feature" skipped="0" tests="1" time="0.349374">
+  <testcase classname="karate.Article.Delete.DeleteArticle" name="delete an article" time="0.349374">
+    <failure message="DeleteArticle.feature:13 - status code was: 204, expected: 200, response time: 346, url: https://angular-conduit-node.herokuapp.com/api/articles/vida1-kejm1e, response: ">* url url ................................................................. passed
+Given header Authorization = 'Bearer '+ token ............................. passed
+Given path 'articles' ..................................................... passed
+And path slug ............................................................. passed
+When method DELETE ........................................................ passed
+Then status 200 ........................................................... failed
+
+Stack Trace:
+com.intuit.karate.exception.KarateException: DeleteArticle.feature:13 - status code was: 204, expected: 200, response time: 346, url: https://angular-conduit-node.herokuapp.com/api/articles/vida1-kejm1e, response: &#13;
+	at ✽.Then status 200 (DeleteArticle.feature:13)</failure>
+  </testcase>
+</testsuite>

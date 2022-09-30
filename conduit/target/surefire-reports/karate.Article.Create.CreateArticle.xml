@@ -1,0 +1,14 @@
+<testsuite failures="0" name="karate/Article/Create/CreateArticle.feature" skipped="0" tests="1" time="1.424668">
+  <testcase classname="karate.Article.Create.CreateArticle" name="check the service POST method" time="1.424668">
+    <system-out>* url url ................................................................. passed
+* def requestBody = read('karate/Article/Create/BodyRequest.json') ........ passed
+* def responseCrete = read('karate/Article/Create/CreateResponse.json') ... passed
+* print token ............................................................. passed
+Given header Authorization = 'Bearer '+ token ............................. passed
+Given path 'articles' ..................................................... passed
+And request requestBody ................................................... passed
+When method POST .......................................................... passed
+Then status 200 ........................................................... passed
+And match response == responseCrete ....................................... passed</system-out>
+  </testcase>
+</testsuite>

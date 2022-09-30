@@ -1,0 +1,10 @@
+<testsuite failures="0" name="karate/User/Profile/Getprofile.feature" skipped="0" tests="1" time="0.345373">
+  <testcase classname="karate.User.Profile.Getprofile" name="check the service GET method" time="0.345373">
+    <system-out>* url url ................................................................. passed
+* def responsesGet = read('classpath:karate/User/Profile/ResponseGet.json') . passed
+Given path 'profiles', 'username' ......................................... passed
+When method GET ........................................................... passed
+Then status 200 ........................................................... passed
+And match response == responsesGet ........................................ passed</system-out>
+  </testcase>
+</testsuite>

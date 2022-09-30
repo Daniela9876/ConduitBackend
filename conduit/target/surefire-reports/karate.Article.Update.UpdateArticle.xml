@@ -1,0 +1,20 @@
+<testsuite failures="1" name="karate/Article/Update/UpdateArticle.feature" skipped="0" tests="1" time="0.332477">
+  <testcase classname="karate.Article.Update.UpdateArticle" name="check the service PUT method" time="0.332477">
+    <failure message="UpdateArticle.feature:20 - status code was: 404, expected: 200, response time: 316, url: https://angular-conduit-node.herokuapp.com/api/articles/vida1-kejm1e, response: Not Found">* url url ................................................................. passed
+* def requestBody = read('karate/Article/Update/BodyUpdate.json') ......... passed
+* def responseUpdate = read('karate/Article/Update/ResponseUpdate.json') .. passed
+* print token ............................................................. passed
+Given header Authorization = 'Bearer '+ token ............................. passed
+Given path 'articles' ..................................................... passed
+And path slug ............................................................. passed
+And request requestBody ................................................... passed
+When method PUT ........................................................... passed
+Then status 200 ........................................................... failed
+
+Stack Trace:
+com.intuit.karate.exception.KarateException: UpdateArticle.feature:20 - status code was: 404, expected: 200, response time: 316, url: https://angular-conduit-node.herokuapp.com/api/articles/vida1-kejm1e, response: Not Found&#13;
+	at ✽.Then status 200 (UpdateArticle.feature:20)&#13;
+
+And match response == responseUpdate ...................................... skipped</failure>
+  </testcase>
+</testsuite>

@@ -1,0 +1,12 @@
+<testsuite failures="0" name="src/test/resources/karate/User/RegisterUser/RegisterUser.feature" skipped="0" tests="1" time="2.167532">
+  <testcase classname="src.test.resources.karate.User.RegisterUser.RegisterUser" name="check the service POST method" time="2.167532">
+    <system-out>* url url ................................................................. passed
+* def requestBody = read('karate/User/RegisterUser/BodyRequest.json') ..... passed
+* def responseRegister = read('karate/User/RegisterUser/RegisterResponses.json') . passed
+Given path 'users' ........................................................ passed
+And request requestBody ................................................... passed
+When method POST .......................................................... passed
+Then status 200 ........................................................... passed
+And match response == responseRegister .................................... passed</system-out>
+  </testcase>
+</testsuite>
